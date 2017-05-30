@@ -1,0 +1,89 @@
+<div class="container">
+  <form action="#" method="post" class="form-horizontal">
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="card mx-12">
+          <div class="card-block p-2">
+            <h2>Cotización</h2>
+            <p class="text-muted">Por favor ingrese informacion para su cotización</p>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="input-group mb-1">
+                  <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+                  <input type="text" class="form-control" placeholder="Zona circulaci&oacute;n">
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="input-group mb-1">
+                  <span class="input-group-addon"><i class="icon-briefcase"></i></span>
+                  <select class="form-control" id="ddluso">
+                     <option [value]="-1">:: USO :: </option>
+                     <option *ngFor="let opt of loUsos" [value]="opt.intIdUso">{{opt.strDescripcion}}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="input-group mb-1">
+                  <span class="input-group-addon"><i class="icon-wrench"></i></span>
+                  <!--<input type="text" class="form-control" placeholder="Username">-->
+                  <select class="form-control" id="ddlClase">
+                      <option selected>Clase</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="input-group mb-1">
+                  <span class="input-group-addon"><i class="fa fa-car"></i></span>
+                  <select class="form-control" id="ddlMarca">
+                      <option selected>Marca</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="input-group mb-1">
+                  <span class="input-group-addon"><i class="fa fa-car"></i></span>
+                  <select class="form-control" id="ddlModelo">
+                      <option selected>Modelo</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="input-group mb-1">
+                  <span class="input-group-addon"><i class="fa fa-car"></i></span>
+                  <!--<input type="text" class="form-control" placeholder="Username">-->
+                  <select class="form-control" id="ddlVersion">
+                      <option selected>Version</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-4">
+                <button type="button" class="btn btn-block btn-success">Cotizar</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </form>
+</div>

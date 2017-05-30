@@ -1,0 +1,59 @@
+{
+  "type": "column2d",
+  "renderAt": "chart-container",
+  "width": "550",
+  "height": "400",
+  "id": "revenue-chart",
+  "dataFormat": "json",
+  "dataSource": {
+    "chart": {
+      "yAxisName": "Revenue (In USD Billion)",
+      "yAxisMaxValue": "200",
+      "numberPrefix": "$",
+      "paletteColors": "#0075c2",
+      "bgColor": "#ffffff",
+      "showBorder": "0",
+      "showCanvasBorder": "0",
+      "plotBorderAlpha": "10",
+      "usePlotGradientColor": "0",
+      "plotFillAlpha": "50",
+      "showXAxisLine": "1",
+      "axisLineAlpha": "25",
+      "divLineAlpha": "10",
+      "showValues": "1",
+      "showAlternateHGridColor": "0",
+      "plotSpacePercent": "10",
+      "chartBottomMargin": "50",
+      "baseFont": "Source Sans Pro",
+      "baseFontSize": "16",
+      "toolTipColor": "#ffffff",
+      "toolTipBorderThickness": "0",
+      "toolTipBgColor": "#000000",
+      "toolTipBgAlpha": "80",
+      "toolTipBorderRadius": "2",
+      "toolTipPadding": "10"
+    },
+    "data": [
+      {
+        "label": "Amazon",
+        "value": "88.99"
+      },
+      {
+        "label": "Apple",
+        "value": "182.8"
+      },
+      {
+        "label": "Facebook",
+        "value": "12.47"
+      },
+      {
+        "label": "Google",
+        "value": "65.67"
+      },
+      {
+        "label": "Microsoft",
+        "value": "86.83"
+      }
+    ]
+  }
+}

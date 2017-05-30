@@ -1,0 +1,43 @@
+<div class="app flex-row align-items-center login-container">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card-group mb-0">
+          <div class="card p-1 animated pulse">
+            <form [formGroup]="frmLogin" (ngSubmit)="submitForm(frmLogin.value)">
+              <div class="card-block">
+                <img class="card-img-top centerBlock" src="./../../../assets/img/logo-main.jpg" alt=".: ASUL :.">
+                <p class="text-muted">Ingrese sus datos de acceso</p>
+                <div *ngIf="frmLogin.controls['username'].hasError('required') && frmLogin.controls['username'].touched" class="errorFormLogin ">
+                  &nbsp;Por favor ingrese su nombre de usuario.
+                </div>
+                <div class="input-group mb-1">
+                  <span class="input-group-addon"><i class="icon-user"></i> </span>
+                  <input type="text" (click)="cleanMessage()" class="form-control" value="gonto" placeholder="Usuario" [formControl]="frmLogin.controls['username']">
+                </div>
+                <div *ngIf="frmLogin.controls['spassword'].hasError('required') && frmLogin.controls['spassword'].touched" class="errorFormLogin">
+                  &nbsp;Por favor ingrese su contraseña.
+                </div>
+                <div class="input-group mb-2">
+                  <span class="input-group-addon"><i class="icon-lock"></i></span>
+                  <input type="password" (click)="cleanMessage()" class="form-control" value="gonto" placeholder="Contraseña" [formControl]="frmLogin.controls['spassword']">
+                </div>
+                <div *ngIf="bShowerror" class="errorFormLogin">
+                  &nbsp;{{sMensajeError}}
+                </div>
+                <div class="input-group mb-2">
+                </div>
+                <div class="row centerBlock">
+                  <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary px-2" [disabled]="!frmLogin.valid">Iniciar Sesión</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
